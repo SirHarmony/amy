@@ -1,0 +1,7 @@
+# Local secrets for Wrangler / Cloudflare Vite (do not commit)
+# Copy to .dev.vars and fill in real values.
+
+calendly=https://calendly.com/your-user/your-event
+RESEND_API_KEY=re_xxxxxxxx
+NOTIFY_EMAIL=harmonymukolwe@gmail.com
+FROM_EMAIL="Amy Date <onboarding@resend.dev>"
