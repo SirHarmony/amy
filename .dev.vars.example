@@ -1,5 +1,9 @@
 # Local secrets for Wrangler / Cloudflare Vite (do not commit)
 # Copy to .dev.vars and fill in real values.
+#
+# Production:
+# - `calendly`, `NOTIFY_EMAIL`, and `FROM_EMAIL` can live in wrangler.jsonc vars
+# - Set RESEND_API_KEY with: pnpm exec wrangler secret put RESEND_API_KEY
 
 calendly=https://calendly.com/your-user/your-event
 RESEND_API_KEY=re_xxxxxxxx

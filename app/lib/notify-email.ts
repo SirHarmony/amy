@@ -16,7 +16,6 @@ export async function sendDatePlanEmail(input: DatePlanEmailInput) {
       "Missing RESEND_API_KEY. Add it to .dev.vars (local) or as a Worker secret (production).",
     );
   }
-
   const dateLine = input.date?.trim()
     ? input.date.trim()
     : "not captured yet (check Calendly)";

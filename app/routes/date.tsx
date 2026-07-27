@@ -23,8 +23,12 @@ export function loader() {
 
   if (!calendlyUrl) {
     throw new Response(
-      "Missing calendly URL. Set `calendly` in .dev.vars for local, or as a Worker secret for production.",
-      { status: 500 },
+      "Calendly is not configured. Set the `calendly` var in wrangler.jsonc or as a Worker secret, then redeploy.",
+      {
+        status: 503,
+        statusText: "Calendly not configured",
+        headers: { "Content-Type": "text/plain; charset=utf-8" },
+      },
     );
   }
 
