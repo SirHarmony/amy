@@ -78,10 +78,7 @@ export function Welcome() {
     let attempts = 0;
 
     // Keep a little distance from the current spot so the dodge feels intentional
-    while (
-      attempts < 8 &&
-      Math.hypot(nextX - noPos.x, nextY - noPos.y) < 80
-    ) {
+    while (attempts < 8 && Math.hypot(nextX - noPos.x, nextY - noPos.y) < 80) {
       nextX = Math.random() * maxX;
       nextY = Math.random() * maxY;
       attempts += 1;
@@ -109,7 +106,8 @@ export function Welcome() {
             Yay — it&apos;s a date!
           </h1>
           <p className="proposal-subtitle">
-            You just made my heart do a little dance. Can&apos;t wait to see you.
+            You just made my heart do a little dance. Can&apos;t wait to see
+            you.
           </p>
           <div className="success-actions">
             <button
@@ -199,7 +197,7 @@ export function Welcome() {
       </div>
 
       <div className="proposal-content">
-        <p className="proposal-brand">Amy</p>
+        <p className="proposal-brand">Amazing Amy</p>
         <h1 className="proposal-title">
           Will you go
           <br />
