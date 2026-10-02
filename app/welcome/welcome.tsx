@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router";
+import { Link, useFetcher } from "react-router";
 
 type Answer = "yes" | "no" | null;
 
@@ -48,6 +48,7 @@ function createConfetti(count: number): ConfettiPiece[] {
 }
 
 export function Welcome() {
+  const answerFetcher = useFetcher();
   const [answer, setAnswer] = useState<Answer>(null);
   const [noPos, setNoPos] = useState({ x: 0, y: 0 });
   const [hasMoved, setHasMoved] = useState(false);
@@ -55,6 +56,7 @@ export function Welcome() {
   const [confetti, setConfetti] = useState<ConfettiPiece[]>([]);
   const playgroundRef = useRef<HTMLDivElement>(null);
   const noBtnRef = useRef<HTMLButtonElement>(null);
+  const noEmailSentRef = useRef(false);
 
   useEffect(() => {
     if (answer === "yes") {
@@ -94,6 +96,9 @@ export function Welcome() {
 
   function handleNo() {
     setAnswer("no");
+    if (noEmailSentRef.current || answerFetcher.state !== "idle") return;
+    noEmailSentRef.current = true;
+    answerFetcher.submit({ answer: "no" }, { method: "post" });
   }
 
   if (answer === "yes") {
@@ -166,6 +171,7 @@ export function Welcome() {
               setAnswer(null);
               setHasMoved(false);
               setNoPos({ x: 0, y: 0 });
+              noEmailSentRef.current = false;
             }}
           >
             Try again
@@ -224,7 +230,7 @@ export function Welcome() {
                   }
                 : undefined
             }
-            onMouseEnter={dodgeNo}
+            // onMouseEnter={dodgeNo}
             onClick={handleNo}
             aria-label="No (it might try to run away)"
           >
