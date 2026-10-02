@@ -230,7 +230,7 @@ export function Welcome() {
                   }
                 : undefined
             }
-            // onMouseEnter={dodgeNo}
+            onMouseEnter={dodgeNo}
             onClick={handleNo}
             aria-label="No (it might try to run away)"
           >
