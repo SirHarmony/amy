@@ -204,12 +204,45 @@ export function Welcome() {
 
       <div className="proposal-content">
         <p className="proposal-brand">Amazing Amy</p>
-        <h1 className="proposal-title">
+
+        <p className="proposal-subtitle">I&apos;ve been wanting to ask…</p>
+        <p className="proposal-subtitle">
+          I have liked you a good one for a while now. When I call you 'Amazing
+          Amy', it is a testament to the kind of person you are in my view.{" "}
+          <br />
+          <br />
+          With you, I feel like I can be myself. I have not felt the kind of
+          connection and comfort that I feel with you for a long time. <br />
+          <br />I would love to get to know you better, and I do not want to
+          waste the opportunity again to see if you would be open to you and I
+          doing life together; the highs and lows, and whatnot (I learnt this
+          from someone I know [tears of joy] [tears of joy]). <br />
+          <br />
+          You may wonder what I would like to achieve with this move,
+          understandably so. I am looking for a long-term, committed,
+          meaningful, and purposeful relationship with you, anchored in Christ,
+          faith and love. One that is aimed at ending up in a Godly marriage and
+          family.
+          <br />
+          <br />
+          This is a big decision for me, and I'd presume it is for you as well.
+          I have considered it from all possible angles, I have prayed about it,
+          and I am convinced it is the right move, at least from my end. Please
+          take your time, and make a prayerful consideration. Inasmuch as I
+          would love to have an answer from you soon, I would also not want to
+          rush you into a decision that you may not be ready for. Therefore,
+          inasmuch as it would make me happy for you to say yes, an honest
+          answer would be greatly appreciated. <br />
+          <br />I look forward to your response.
+          <br />
+          So here goes the question...
+        </p>
+
+        <h1 className="proposal-title pt-12">
           Will you go
           <br />
           out with me?
         </h1>
-        <p className="proposal-subtitle">I&apos;ve been wanting to ask…</p>
 
         <div className="button-playground" ref={playgroundRef}>
           <button type="button" className="btn-yes" onClick={handleYes}>
