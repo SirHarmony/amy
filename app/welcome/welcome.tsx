@@ -112,8 +112,24 @@ export function Welcome() {
           </h1>
           <p className="proposal-subtitle">
             You just made my heart do a little dance. Can&apos;t wait to see
-            you.
+            you. Let&apos;s navigate this forest together.
           </p>
+          <div className="success-photos" aria-label="Our forest memories">
+            <figure className="success-photo">
+              <img
+                src="/memories/us-trail.jpg"
+                alt="Us smiling together on a forest trail"
+                loading="lazy"
+              />
+            </figure>
+            <figure className="success-photo">
+              <img
+                src="/memories/forest-path.jpg"
+                alt="A quiet path through the trees"
+                loading="lazy"
+              />
+            </figure>
+          </div>
           <div className="success-actions">
             <button
               type="button"
