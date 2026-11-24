@@ -164,6 +164,11 @@ body {
   box-shadow: 0 10px 28px rgb(var(--wine-deep-rgb) / 0.14);
   aspect-ratio: 3 / 4;
   background: rgb(255 183 234 / 0.25);
+  transition: transform 0.5s ease;
+}
+
+.success-photo:hover {
+  transform: scale(1.05);
 }
 
 .success-photo img {

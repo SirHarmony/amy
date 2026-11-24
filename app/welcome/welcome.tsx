@@ -112,13 +112,13 @@ export function Welcome() {
           </h1>
           <p className="proposal-subtitle">
             You just made my heart do a little dance. Can&apos;t wait to see
-            you. Let&apos;s navigate this forest together.
+            you. Let&apos;s navigate this forest and vast ocean together.
           </p>
           <div className="success-photos" aria-label="Our forest memories">
             <figure className="success-photo">
               <img
                 src="/memories/us-trail.jpg"
-                alt="Us smiling together on a forest trail"
+                alt="Amy and I smiling together on a forest trail"
                 loading="lazy"
               />
             </figure>
@@ -126,6 +126,20 @@ export function Welcome() {
               <img
                 src="/memories/forest-path.jpg"
                 alt="A quiet path through the trees"
+                loading="lazy"
+              />
+            </figure>
+            <figure className="success-photo">
+              <img
+                src="/memories/ocean.jpg"
+                alt="A view of the ocean"
+                loading="lazy"
+              />
+            </figure>
+            <figure className="success-photo">
+              <img
+                src="/memories/beach.jpg"
+                alt="A view of the beach"
                 loading="lazy"
               />
             </figure>
@@ -224,31 +238,35 @@ export function Welcome() {
         <p className="proposal-subtitle">I&apos;ve been wanting to ask…</p>
         <p className="proposal-subtitle">
           I have liked you a good one for a while now. When I call you 'Amazing
-          Amy', it is a testament to the kind of person you are in my view.{" "}
-          <br />
-          <br />
-          With you, I feel like I can be myself. I have not felt the kind of
-          connection and comfort that I feel with you for a long time. <br />
-          <br />I would love to get to know you better, and I do not want to
-          waste the opportunity again to see if you would be open to you and I
-          doing life together; the highs and lows, and whatnot (I learnt this
-          from someone I know [tears of joy] [tears of joy]). <br />
+          Amy', it is a testament to the kind of person you are in my view. And
+          I think many of our values align. <br />
+          <br />I would love to have the chance to get to know you better. I
+          have missed the chance to let you know how I felt before, and I do not
+          want to waste the opportunity to know if you perhaps would feel the
+          same way. <br />
           <br />
           You may wonder what I would like to achieve with this move,
-          understandably so. I am looking for a long-term, committed,
-          meaningful, and purposeful relationship with you, anchored in Christ,
-          faith and love. One that is aimed at ending up in a Godly marriage and
-          family.
+          understandably so. I would like to go out with you, and see if we
+          would be a good fit for each other, and if we would both like to
+          pursue a relationship together, one whose aim is to end up in a Godly
+          marriage and family - aimed at doing life together, through the highs
+          and lows, and whatnot (I learnt this from someone I know [tears of
+          joy] [tears of joy]).
           <br />
           <br />
           This is a big decision for me, and I'd presume it is for you as well.
-          I have considered it from all possible angles, I have prayed about it,
-          and I am convinced it is the right move, at least from my end. Please
-          take your time, and make a prayerful consideration. Inasmuch as I
-          would love to have an answer from you soon, I would also not want to
-          rush you into a decision that you may not be ready for. Therefore,
-          inasmuch as it would make me happy for you to say yes, an honest
-          answer would be greatly appreciated. <br />
+          Therefore, please take your time and make a prayerful consideration.
+          Inasmuch as it would make me happy for you to say yes, an honest
+          answer, without compulsion, would be greatly appreciated. <br />
+          <br />
+          Whatever direction this may take (either after your response or after
+          the discussion I'm hoping a 'yes' would spark), I pray that God will
+          help me/ us with 2 things; <br />
+          1. That you won't ever have to guess where I stand when it comes to
+          you, and <br />
+          2.That our interaction will push us closer to God, and that we shall
+          both enter heaven. &#128513;
+          <br />
           <br />I look forward to your response.
           <br />
           So here goes the question...
@@ -257,7 +275,7 @@ export function Welcome() {
         <h1 className="proposal-title pt-12">
           Will you go
           <br />
-          out with me?
+          out on a date with me?
         </h1>
 
         <div className="button-playground" ref={playgroundRef}>
